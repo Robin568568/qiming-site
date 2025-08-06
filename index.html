@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>中華啟明重建協會</title>
+<style>
+
+.donation-container {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.donation-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-color: #fffaf7;
+      line-height: 1.8;
+    }
+    header {
+      text-align: center;
+      padding: 10px 0;
+    }
+    .logo {
+      height: 50px;
+      vertical-align: middle;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #eee;
+      padding: 10px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 6px 12px;
+      background-color: transparent;
+      border-radius: 4px;
+      color: #000;
+      font-weight: bold;
+    }
+    .banner {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    .section-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0px 0 10px;
+      border-bottom: 2px dashed #ccc;
+      display: inline-block;
+    }
+    .news, .donate-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .news-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #ccc;
+      overflow: visible;
+    }
+    .news-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .news-card p {
+      font-size: 14px;
+      padding: 10px;
+    }
+    .donate-box {
+      width: 300px;
+      background-color: #e5f7ff;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    .donate-box h3 {
+      margin-top: 0;
+    }
+    .donate-btn {
+      display: block;
+      width: 100%;
+      background-color: #d5f63b;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #FFE7EF !important;
+      color: #333 !important;
+      padding: 20px;
+      font-size: 14px;
+    }
+    footer .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    footer img {
+      height: 40px;
+    }
+    .facebook {
+      margin-top: 10px;
+    }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav img {
+    margin-bottom: 10px;
+  }
+  nav div {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.donation-box {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  overflow: visible;
+}
+
+.donation-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.donation-content {
+  padding: 10px 20px;
+  text-align: left;
+  overflow: auto;
+}
+0px;
+  text-align: left;
+  overflow: auto;
+}
+
+/* 強制高度限制與自動換行，防止內容溢出 */
+.donation-box {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.donation-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.donation-content {
+  padding: 10px 20px;
+  text-align: left;
+  overflow-y: auto;
+  flex: 1;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+
+/* 等高捐款區塊修正 */
+.donate-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch;
+}
+
+.donate-box {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+</style>
+
+<style>
+@media (max-width: 768px) {
+  footer > div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  footer > div > div {
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+  }
+}
+</style>
+
+</head>
+<body>
+<style>
+
+.donation-container {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.donation-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 40px;
+  background-color: #fff0f5;
+  flex-wrap: wrap;
+}
+.logo {
+  margin-right: 20px;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+.menu > li {
+  position: relative;
+  padding: 6px 12px;
+  background-color: #d9d9ff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 0;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+.submenu li {
+  list-style: none;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.submenu li:hover {
+  background-color: #f0f0f0;
+}
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* 響應式排版 */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu > li {
+    width: 100%;
+  }
+}
+</style>
+<nav class="nav-bar">
+<div class="logo">
+<img alt="LOGO" src="img/picture41.png" style="height: 70px;"/>
+</div>
+<ul class="menu">
+<li class="dropdown">關於協會
+      <ul class="submenu">
+<li><a href="pages/pagesA01.html">關於啟明</a></li>
+<li><a href="pages/pagesA02.html">最新消息</a></li>
+<li><a href="pages/pagesA03.html">認識視障者</a></li>
+<li><a href="pages/pagesA04.html">聯絡我們</a></li>
+</ul>
+</li>
+<li class="dropdown">服務計畫
+      <ul class="submenu">
+<li><a href="pages/pagesB01.html">支持中華啟明重建協會</a></li>
+<li><a href="pages/pagesB02.html">支持視障重建服務計畫</a></li>
+</ul>
+</li>
+<li class="dropdown">視障服務
+      <ul class="submenu">
+<li><a href="pages/pagesC01.html">
+ 社工服務與個案管理支持</a></li>
+<li><a href="pages/pagesC02.html">視障重建訓練服務</a></li>
+<li><a href="pages/pagesC03.html">心理諮詢支持服務</a></li>
+<li><a href="pages/pagesC04.html">視障輔具評估與使用服務</a></li>
+<li><a href="pages/pagesC05.html">視障兒童早期療育支持服務</a></li>
+<li><a href="pages/pagesC06.html">視障者就業支持服務</a></li>
+<li><a href="pages/pagesC07.html">ICF政策專區</a></li>
+</ul>
+</li>
+<li class="dropdown">我要捐款
+      <ul class="submenu">
+<li><a href="pages/pagesD01.html">支持中華啟明重建協會</a></li>
+<li><a href="pages/pagesD02.html">視障者重建服務計畫</a></li>
+<li><a href="pages/pagesD03.html">捐款方式</a></li>
+<li><a href="pages/pagesD04.html">常見問題</a></li>
+</ul>
+</li>
+<li class="dropdown">公開資訊
+      <ul class="submenu">
+<li><a href="pages/pagesE01.html">捐款芳名錄</a></li>
+<li><a href="pages/pagesE02.html">啟明視障按摩便利站</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section style="max-width: 900px; margin: 0px auto; padding: 40px; background-color: #FFFCF5; border-radius: 16px;">
+<div style="display: flex; flex-direction: column; gap: 24px; color: #333; line-height: 1.8;">
+<img alt="主視覺圖" src="img/picture39.png" style="width: 100%; border-radius: 12px;"/>
+</div>
+</section>
+<section style="text-align: center;">
+<div class="section-title">最新消息</div>
+<div class="news">
+<div class="news-card" onclick="location.href='pages/pagesA02.html'" style="cursor: pointer;">
+<img alt="news1" src="img/picture2.jpg"/>
+<p><strong>看不見，卻能做出家的味道</strong><br/><span style="display: block; text-align: left;">小茹曾是自信滿滿的業務員，卻因意外失去視力，陷入長期低潮。直到她鼓起勇氣走進烹飪教室，才慢慢找回「我還可以做什麼」的答案。</span></p>
+</div>
+<div class="news-card" onclick="location.href='pages/pagesA02.html'" style="cursor: pointer;">
+<img alt="news2" src="img/picture5.jpg"/>
+<p><strong>牛角撥筋，開啟希望的鑰匙</strong><br/><span style="display: block; text-align: left;">不只是技術的學習，更是他們對人生的承諾！哪怕看不見世界，也要用雙手，為別人帶來溫暖，為自己開出一條光亮的路。</span></p>
+</div>
+<div class="news-card" onclick="location.href='pages/pagesA02.html'" style="cursor: pointer;">
+<img alt="news3" src="img/picture8.jpg"/>
+<p><strong>雙手，揉進了希望的香氣</strong><br/><span style="display: block; text-align: left;">「看見」自己的努力，每一刻都是真實的感動。即使有障礙，我們依然可以學習、創作、並溫柔地改變這個世界。</span></p>
+</div>
+<div class="news-card" onclick="location.href='pages/pagesA02.html'" style="cursor: pointer;">
+<img alt="news4" src="img/picture11.jpg"/>
+<p><strong>視而不見，用雙手點亮世界</strong><br/><span style="display: block; text-align: left;">當生活設下重重阻礙，有些人選擇退縮，而他們選擇挺身而上。他們看不見世界的樣子，卻讓世界看見他們的價值。</span></p>
+</div>
+</div>
+</section>
+<section style="text-align: center;">
+<div class="section-title">捐款方案</div>
+<div class="donate-section">
+<a href="pages/pagesB01.html" style="text-decoration: none; color: inherit; display: block;"><div class="donate-box" style="width: 100%; max-width: 500px;  padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;"><img alt="支持中華啟明重建協會圖片" src="img/picture22.png" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 10px;"/>
+<h3>支持中華啟明重建協會</h3>
+<button class="donate-btn">我要捐款</button><p style="text-align: left
+;">中華啟明重建協會自2005年成立以來，持續協助視障朋友重建獨立生活能力，陪伴他們走過重建之路。</p><p style="text-align: left;">❤️ 邀請您，用愛支持看不見的努力</p><p style="text-align: left;">🌱 看不見，不代表失去希望；</p><p style="text-align: left;">    有您支持，他們就能看見陽光。</p>
+</div></a>
+<a href="pages/pagesB02.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="donate-box" style="width: 100%; max-width: 500px; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+    <img alt="支持視障者重建服務計畫圖片" src="img/picture23.jpg" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 10px;"/>
+    <h3>支持視障者重建服務計畫</h3>
+    <button class="donate-btn">我要捐款</button>
+    <p style="text-align: left;">推動視障者重建服務，陪伴他們重拾自信、建立獨立生活能力。</p>
+    <p style="text-align: left;">本計畫聚焦三大方向：</p>
+    <p style="text-align: left;">四大培力訓練：生活自理、定向行動、點字文書、電腦應用。</p>
+    <p style="text-align: left;">輔具協力支援：提供輔具評估、使用訓練與申請協助。</p>
+    <p style="text-align: left;">兒童早療服務：為0-6歲視障幼童提供到宅指導與親職支持。</p>
+  </div>
+</a>
+</div>
+</section>
+
+<footer style="background-color: #f88fa6; color: #fff; padding: 20px 40px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0;">
+
+    <!-- 區塊1：LOGO -->
+    <div style="width: 200px; display: flex; align-items: center; justify-content: center; margin-right: 60px;">
+      <img src="img/picture41.png" alt="LOGO" style="max-height: 60px; height: auto;" />
+    </div>
+
+    <!-- 區塊2：聯絡資訊 -->
+    <div style="width: 260px; margin-left: 20px; margin-right: 60px;">
+      <p style="margin: 6px 0;">電話：04-2203-5858</p>
+      <p style="margin: 6px 0;">傳真：04-2203-5859</p>
+      <p style="margin: 6px 0;">地址：台中市北區公園路184號B1</p>
+      <p style="margin: 6px 0;">E-mail：eyes22035858@hotmail.com</p>
+    </div>
+
+    <!-- 區塊3：捐款資訊 -->
+    <div style="width: 280px; margin-right: 60px;">
+      <p style="margin: 6px 0;">國泰世華銀行捐款帳號：239030031370</p>
+      <p style="margin: 6px 0;">戶名：社團法人中華啟明重建協會</p>
+      <p style="margin: 6px 0;">郵政劃撥捐款帳號：22618870</p>
+      <p style="margin: 6px 0;">戶名：社團法人中華啟明重建協會</p>
+    </div>
+
+    <!-- 區塊4：Facebook 圖示 -->
+    <div style="width: 100px; display: flex; align-items: center; justify-content: center;">
+      <a href="https://www.facebook.com/profile.php?id=100069984848455&locale=zh_TW" target="_blank">
+        <img src="img/facebook.jpg" alt="Facebook" style="height: 72px;" />
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
+
+
