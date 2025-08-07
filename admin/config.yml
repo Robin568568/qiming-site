@@ -1,9 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Robin568568/qiming-site # ← 替換成你的 GitHub 倉庫
   branch: main
-  identity_url: https://illustrious-sunflower-e0f144.netlify.app
-  identity_roles:
-    - admin
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
