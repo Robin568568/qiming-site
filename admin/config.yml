@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: main
+  identity_roles:
+    - admin
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
