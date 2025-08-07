@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "圖片"
+public_folder: "/圖片"
+
+collections:
+  - name: "pages"
+    label: "頁面"
+    folder: "頁面"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "內容", name: "body", widget: "markdown" }
