@@ -1,7 +1,9 @@
-backend:
+bbackend:
   name: github
-  repo: Robin568568/qiming-site # ← 替換成你的 GitHub 倉庫
+  repo: Robin568568/qiming-site
   branch: main
+  base_url: https://illustrious-sunflower-e0f144.netlify.app
+  client_id: 0v2311zXk80o2AsAKWvkT
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
