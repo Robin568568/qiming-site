@@ -1,8 +1,9 @@
-bbackend:
+backend:
   name: github
   repo: Robin568568/qiming-site
   branch: main
   base_url: https://illustrious-sunflower-e0f144.netlify.app
+  auth_scope: repo
   client_id: 0v2311zXk80o2AsAKWvkT
 
 media_folder: "img/uploads"
